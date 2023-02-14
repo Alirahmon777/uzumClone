@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter";
+  background-color: #fff;
+}
+
+.container {
+  position: relative;
+  width: 1240px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.to-high {
+  position: fixed;
+  display: flex;
+  justify-content: end;
+  z-index: 5;
+  bottom: 45px;
+  right: 5px;
+  cursor: pointer;
+}

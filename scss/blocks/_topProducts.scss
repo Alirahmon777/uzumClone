@@ -1,0 +1,131 @@
+.top-products {
+  position: relative;
+  padding: 56px 0 40px;
+
+  &__link {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 25px;
+  }
+
+  &__link svg {
+    margin-top: 6px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 40px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 232px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  &__imagebox {
+    overflow: hidden;
+    width: 232px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    z-index: 2;
+    will-change: transform;
+  }
+
+  &__item:hover &__img {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px #ebebeb;
+  }
+
+  &__item:hover &__imagebox {
+    border-radius: 8px 8px 3px 3px;
+  }
+
+  &__box {
+    height: 148.8px;
+    padding: 12px 7px 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: hidden;
+    border-radius: 0 0 8px 8px;
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+  }
+
+  &__item:hover &__box {
+    box-shadow: 2px 2px 20px #ececec;
+  }
+
+  &__name {
+    font-size: 13px;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 12px;
+    color: #8b8e94;
+    font-weight: 300;
+    & span {
+      padding-top: 3px;
+    }
+  }
+
+  &__monthly mark {
+    font-family: "Roboto";
+    padding: 2px 6px 3px 6px;
+    font-size: 11px;
+    border-radius: 4px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  &__prices {
+    margin-top: 11px;
+  }
+
+  &__subprice {
+    font-size: 12px;
+    color: #757575;
+    text-decoration: line-through;
+  }
+
+  &__price {
+    font-weight: 500;
+  }
+
+  &__btnbasket {
+    padding: 3px 5px;
+    border-radius: 50%;
+    border: 1px solid #d6d7d8;
+    background: transparent;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  &__btnbasket:hover {
+    background: #0000000c;
+  }
+}

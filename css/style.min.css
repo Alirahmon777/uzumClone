@@ -1,0 +1,522 @@
+@charset "UTF-8";
+/* inter-regular - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v12-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/inter-v12-latin_cyrillic-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-500 - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter-v12-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/inter-v12-latin_cyrillic-500.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-600 - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v12-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/inter-v12-latin_cyrillic-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-700 - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v12-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/inter-v12-latin_cyrillic-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* Roboto ⬇️*/
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-500.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter";
+  background-color: #fff;
+}
+
+.container {
+  position: relative;
+  width: 1240px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.to-high {
+  position: fixed;
+  display: flex;
+  justify-content: end;
+  z-index: 5;
+  bottom: 45px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.header-location {
+  padding: 6px 0;
+  background-color: #f4f5f5;
+}
+.header-location__content {
+  font-size: 14px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.header-location__box {
+  color: #141415;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-location__box div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header-location__transfer {
+  font-weight: 500;
+}
+.header-location__gps span {
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.header-location__order {
+  color: #62656a;
+}
+.header-location__order span {
+  margin-left: 14px;
+  font-weight: 500;
+  color: #62656a;
+}
+.header-location__order span a {
+  text-decoration: underline;
+}
+.header-location__lang {
+  color: #62656a;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-location__language img {
+  vertical-align: middle;
+}
+.header-location__language-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header__content {
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header__box {
+  display: flex;
+  gap: 2px;
+}
+.header__search {
+  position: relative;
+  height: 40px;
+  width: 520px;
+  border-radius: 4px;
+  border: 1px solid #d6d7d8;
+}
+.header__searchinput {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  padding: 0 78px 0 15px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+.header__searchbtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75px;
+  height: 100%;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background: #f8f8f8;
+  cursor: pointer;
+}
+.header-login__list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.header-login__item a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__item {
+  position: relative;
+  padding: 5px 0;
+  overflow: hidden;
+}
+.header__item:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  opacity: 0;
+  text-align: center;
+  background-color: #141415;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+.header__item:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+.header__link {
+  padding: 7px 0;
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #909090;
+  transition: all 0.1s linear;
+}
+.header__link svg {
+  transition: all 0.1s linear;
+}
+.header__link:hover {
+  color: #000;
+}
+.header__link:hover svg {
+  fill: #000;
+}
+
+.ui-button[data-v-58853e36] {
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  transition: all 0.2s;
+}
+
+header .show-catalog {
+  font-size: 0.875rem;
+  font-family: Inter;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+  justify-items: right;
+  border-radius: 4px;
+  background-color: rgba(49, 49, 196, 0.1);
+  color: #33c;
+  height: 40px;
+  width: 120px;
+  margin-right: 7px;
+  font-family: Inter, sans-serif;
+}
+
+.ui-button .slot.before[data-v-58853e36] {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.catalog-icon {
+  --out: #fff;
+  height: 24px;
+  width: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.catalog-icon .rect {
+  transition: all 0.11s 0.11s ease-out, transform 0.11s 0.001ms ease-out;
+  position: absolute;
+  width: 18px;
+  height: 12px;
+  border: 2px solid #5c5cd6;
+  border-radius: 2px;
+  background: #5c5cd6;
+  box-sizing: border-box;
+  transform: translate(-50%, 0);
+  top: 9px;
+  left: 50%;
+}
+
+.catalog-icon .rect .inner {
+  transition: all 0.11s 0.11s ease-out;
+  background-color: var(--out);
+  width: 100%;
+  height: 100%;
+  border-radius: 1px;
+  margin: auto;
+}
+
+.catalog-icon .top {
+  transition: all 0.11s 0.11s ease-out, opacity 0.001ms 0.11s;
+  position: absolute;
+  width: 13.992px;
+  height: 0;
+  border-top: 2px solid #5c5cd6;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  top: 3px;
+  transform: translate(-50%, 0);
+  left: 50%;
+}
+
+.catalog-icon .bottom {
+  transition: all 0.11s 0.11s ease-out, transform 0.11s 0.001ms ease-out;
+  position: absolute;
+  width: 15.984px;
+  height: 0;
+  background: #5c5cd6;
+  border-top: 2px solid #5c5cd6;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  top: 6px;
+  transform: translate(-50%, 0);
+  left: 50%;
+}
+
+.catalog-icon.open .rect {
+  transition: all 0.11s ease-in, transform 0.11s 0.11s ease-in, border-bottom-width 0.022s 0.088s;
+  height: 0;
+  border-bottom-width: 0;
+  border-top: 2px solid #5c5cd6;
+  background: #5c5cd6;
+  top: 50%;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, -1px) rotate(-45deg);
+}
+
+.catalog-icon.open .top {
+  transition: all 0.11s ease-in, opacity 0.001ms 0.11s ease-in;
+  top: 50%;
+  opacity: 0;
+}
+
+.catalog-icon.open .bottom {
+  transition: all 0.11s ease-in, transform 0.11s 0.11s ease-in, border-radius 0.0077s 0.088s;
+  top: 50%;
+  width: 18.5px;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, -1px) rotate(45deg);
+  border-radius: 2px;
+}
+
+header .show-catalog:hover {
+  background: rgba(49, 49, 196, 0.15);
+}
+
+header .show-catalog .before {
+  margin-left: 16px;
+  margin-right: 8px;
+}
+
+header .show-catalog .default {
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+.intro {
+  margin-top: 26px;
+}
+.intro .swiper-wrapper .swiper-slide img {
+  border-radius: 14px;
+}
+.intro .swiper-button-prev,
+.intro .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+.intro .swiper-button-prev::after,
+.intro .swiper-button-next::after {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+.intro .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.6784313725);
+  opacity: 0.5;
+  margin-right: 0 !important;
+}
+.intro .swiper-pagination-bullet-active {
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.6784313725);
+  opacity: 1;
+  margin-right: 0 !important;
+}
+
+.top-products {
+  position: relative;
+  padding: 56px 0 40px;
+}
+.top-products__link {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 25px;
+}
+.top-products__link svg {
+  margin-top: 6px;
+}
+.top-products__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 40px;
+}
+.top-products__item {
+  display: flex;
+  flex-direction: column;
+  width: 232px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.top-products__imagebox {
+  overflow: hidden;
+  width: 232px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+.top-products__img {
+  width: 100%;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  z-index: 2;
+  will-change: transform;
+}
+.top-products__item:hover .top-products__img {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #ebebeb;
+}
+.top-products__item:hover .top-products__imagebox {
+  border-radius: 8px 8px 3px 3px;
+}
+.top-products__box {
+  height: 148.8px;
+  padding: 12px 7px 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow: hidden;
+  border-radius: 0 0 8px 8px;
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+.top-products__item:hover .top-products__box {
+  box-shadow: 2px 2px 20px #ececec;
+}
+.top-products__name {
+  font-size: 13px;
+}
+.top-products__rating {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 12px;
+  color: #8b8e94;
+  font-weight: 300;
+}
+.top-products__rating span {
+  padding-top: 3px;
+}
+.top-products__monthly mark {
+  font-family: "Roboto";
+  padding: 2px 6px 3px 6px;
+  font-size: 11px;
+  border-radius: 4px;
+}
+.top-products__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.top-products__prices {
+  margin-top: 11px;
+}
+.top-products__subprice {
+  font-size: 12px;
+  color: #757575;
+  text-decoration: line-through;
+}
+.top-products__price {
+  font-weight: 500;
+}
+.top-products__btnbasket {
+  padding: 3px 5px;
+  border-radius: 50%;
+  border: 1px solid #d6d7d8;
+  background: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+.top-products__btnbasket:hover {
+  background: rgba(0, 0, 0, 0.0470588235);
+}/*# sourceMappingURL=style.min.css.map */
