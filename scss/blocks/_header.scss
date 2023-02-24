@@ -25,6 +25,7 @@
 
     &__transfer {
       font-weight: 500;
+      cursor: pointer;
     }
 
     &__gps span {
@@ -60,9 +61,42 @@
     }
 
     &__language-box {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    &__language-uzb,
+    &__language-russian {
+      width: 100%;
+      height: 100%;
+      padding: 4px 6px;
       display: flex;
       align-items: center;
       gap: 5px;
+      pointer-events: none;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &__language-russian {
+      position: absolute;
+      top: 125%;
+      background: #fff;
+      opacity: 0;
+      box-shadow: 0 3px 10px #0000002f;
+      border-radius: 0 0 8px 8px;
+      z-index: 100;
+    }
+
+    &__ques {
+      transition: all 0.1s ease;
+      cursor: pointer;
+    }
+
+    &__ques:hover {
+      color: #141415;
     }
   }
 
@@ -109,17 +143,26 @@
 
   &-login__list {
     display: flex;
-    gap: 20px;
     align-items: center;
   }
 
+  &-login__item {
+    border-radius: 4px;
+    transition: all 0.1s ease-in-out;
+  }
+
   &-login__item a {
+    padding: 8px 10px;
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 15px;
     font-weight: 500;
     color: #000;
+  }
+
+  &-login__item:hover {
+    background-color: #dbdbdb;
   }
 
   &__list {

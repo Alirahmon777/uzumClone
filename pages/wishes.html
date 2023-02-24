@@ -7,34 +7,30 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./favicon/apple-touch-icon.png"
+      href="../favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./favicon/favicon-32x32.png"
+      href="../favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./favicon/favicon-16x16.png"
+      href="../favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="./favicon/safari-pinned-tab.svg"
+      href="../favicon/safari-pinned-tab.svg"
       color="#5bbad5"
     />
     <meta name="msapplication-TileColor" content="#9f00a7" />
     <meta name="theme-color" content="#ffffff" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.min.css" />
-    <title>Uzum || market</title>
+    <link rel="stylesheet" href="../css/style.min.css" />
+    <title>Sevimlilar</title>
   </head>
   <body>
     <header class="header">
@@ -43,38 +39,29 @@
           <div class="header-location__content">
             <div class="header-location__box">
               <div>
-                <img src="./assets/svg/location.svg" alt="location" />
+                <img src="../assets/svg/location.svg" alt="location" />
                 <p class="header-location__gps">
                   Shahar: <span>Toshkent</span>
                 </p>
               </div>
               <p class="header-location__transfer">Topshirish punktlari</p>
-              <a href="./pages/admin.html">Admin</a>
             </div>
             <div class="header-location__order">
               Buyurtmangizni 1 kunda bepul yetkazib beramiz!
               <span
-                >Copied from
-                <a href="https://uzum.uz/" target="_blank">uzum.uz</a>
-                site</span
+                >Copied from <a href="https://uzum.uz/">uzum.uz</a> site</span
               >
             </div>
             <div class="header-location__lang">
               <p class="header-location__ques">Savol-javoblar</p>
               <p class="header-location__ques">Buyurtmalarim</p>
-              <div class="header-location__language-box visibile-ru">
-                <div
-                  class="header-location__language-uzb"
-                  data-name="O'zbekcha"
-                >
-                  <img src="./assets/svg/uzb.svg" alt="uzb-img language" />
+              <div class="header-location__language-box">
+                <div class="header-location__language-uzb">
+                  <img src="../assets/svg/uzb.svg" alt="uzb-img language" />
                   <p class="header-location__language">O'zbekcha</p>
                 </div>
-                <div
-                  class="header-location__language-russian"
-                  data-name="Русский"
-                >
-                  <img src="./assets/svg/rus.svg" alt="rus-img language" />
+                <div class="header-location__language-russian">
+                  <img src="../assets/svg/rus.svg" alt="rus-img language" />
                   <p class="header-location__language">Русский</p>
                 </div>
               </div>
@@ -86,7 +73,7 @@
         <div class="header__wrapper">
           <div class="header__content">
             <img
-              src="./assets/svg/logo.svg"
+              src="../assets/svg/logo.svg"
               style="cursor: pointer"
               onclick="location.href='../index.html'"
               alt="uzum logo"
@@ -158,7 +145,7 @@
                 >
               </li>
               <li class="header-login__item">
-                <a href="./pages/wishes.html"
+                <a href="./wishes.html"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -177,7 +164,7 @@
                 >
               </li>
               <li class="header-login__item">
-                <a href="./pages/basket.html"
+                <a href="./basket.html"
                   ><svg
                     width="24"
                     height="24"
@@ -257,87 +244,57 @@
     </header>
 
     <main>
-      <section class="intro">
+      <section class="favorite">
         <div class="container">
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="./assets/images/cehgelol08kcldtp1uhg.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/images/ceo2ml8v1htd23ak68s0.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/images/cfg80nidjr2oefduj5lg.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/images/cfg82msvutv7dbm92910.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/images/cfg844540v9uauhi0mi0.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/images/cfg8522djr2oefduj63g.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/images/cfg85ukvutv7dbm929g0.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/images/cfg8792djr2oefduj6i0.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/images/cfg888idjr2oefduj6n0.jpg" alt="" />
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+          <h2 class="favorite__title">Istaklarim</h2>
+          <div class="favorite__filter">
+            <p class="favorite__text">Saralash</p>
+            <div class="favorite__filterbox flex">
+              <p class="favorite__selectfirst">Ommabop</p>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="top-products">
-        <div class="container">
-          <div class="top-products__wrapper">
-            <a class="top-products__link" href="#"
-              >Katta sotuvlar
               <svg
-                data-v-36c3e0b4=""
-                width="36"
-                height="36"
+                style="transform: rotate(180deg)"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
-                fill="none"
+                fill="black"
                 xmlns="http://www.w3.org/2000/svg"
-                class="ui-icon title-icon"
+                class="ui-icon"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M9.18945 16.4983C8.91426 16.1887 8.94215 15.7146 9.25174 15.4394L13.1211 12L9.25173 8.56055C8.94215 8.28536 8.91426 7.81131 9.18945 7.50172C9.46464 7.19213 9.93869 7.16425 10.2483 7.43943L14.7483 11.4394C14.9084 11.5818 15 11.7858 15 12C15 12.2142 14.9084 12.4182 14.7483 12.5605L10.2483 16.5605C9.93869 16.8357 9.46464 16.8079 9.18945 16.4983Z"
-                  fill="black"
-                ></path></svg
-            ></a>
+                  d="M12 8C12.3107 8.00895 12.5948 8.12524 12.8257 8.37573L18.4481 14.1929C18.6435 14.3897 18.75 14.6402 18.75 14.9354C18.75 15.5259 18.2883 16 17.7024 16C17.4183 16 17.143 15.8837 16.9388 15.6779L12.0089 10.5496L7.06116 15.6779C6.85696 15.8748 6.59061 16 6.29763 16C5.71167 16 5.25 15.5259 5.25 14.9354C5.25 14.6402 5.35654 14.3897 5.55186 14.1929L11.1832 8.37573C11.4229 8.12524 11.6893 8 12 8Z"
+                ></path>
+              </svg>
 
-            <ul class="top-products__list"></ul>
-            <div class="top-products__addbox">
-              <button class="top-products__addbtn" value="show-other-products">
-                Yana ko‘rsatish 20
-              </button>
+              <div class="favorite__btns">
+                <button class="favorite__btn" value="Ommabop">Ommabop</button>
+                <button class="favorite__btn" value="Arzonroq">Arzonroq</button>
+                <button class="favorite__btn" value="Qimmatroq">
+                  Qimmatroq
+                </button>
+                <button class="favorite__btn" value="Reytingi yuqori">
+                  Reytingi yuqori
+                </button>
+                <button class="favorite__btn" value="Ko‘p buyurtirilgan">
+                  Ko‘p buyurtirilgan
+                </button>
+                <button class="favorite__btn" value="Yaqinda qo‘shilgan">
+                  Yaqinda qo‘shilgan
+                </button>
+              </div>
             </div>
           </div>
+          <ul
+            id="favorite-products"
+            class="favorite__list top-products__list"
+          ></ul>
         </div>
       </section>
     </main>
 
-    <template id="top-product-template">
+    <template id="favourite-template">
       <li class="top-products__item">
         <button id="favorite-btn" class="top-products__likebtn">
-          <div class="top-products__ripple"></div>
           <svg
             data-v-56571d0e=""
             width="20"
@@ -358,6 +315,12 @@
               id="path-border"
               d="M1 6.86486C1 4.20297 3.15017 2 5.86486 2C7.98685 2 9.35921 3.35876 10 4.18673C10.6408 3.35876 12.0132 2 14.1351 2C16.8506 2 19 4.20302 19 6.86486C19 8.02987 18.5328 9.18622 17.8534 10.265C17.1716 11.3476 16.252 12.3903 15.29 13.3377C13.9567 14.6508 12.4757 15.8387 11.4134 16.6907C10.9618 17.0529 10.5859 17.3544 10.3293 17.579C10.1407 17.7439 9.85926 17.7439 9.67075 17.579C9.41405 17.3544 9.03815 17.0529 8.58659 16.6907C7.52431 15.8387 6.04326 14.6508 4.70997 13.3377C3.74802 12.3903 2.82836 11.3476 2.14659 10.265C1.46724 9.18622 1 8.02987 1 6.86486ZM5.86486 3C3.70929 3 2 4.74838 2 6.86486C2 7.76743 2.36553 8.73607 2.99277 9.73208C3.61759 10.7242 4.47833 11.706 5.41165 12.6252C6.71033 13.9042 8.08423 15.005 9.13396 15.8461C9.45728 16.1052 9.74985 16.3396 10 16.547C10.2501 16.3396 10.5427 16.1052 10.866 15.8461C11.9158 15.005 13.2897 13.9042 14.5883 12.6252C15.5217 11.706 16.3824 10.7242 17.0072 9.73208C17.6345 8.73607 18 7.76743 18 6.86486C18 4.74833 16.2914 3 14.1351 3C12.0406 3 10.8181 4.70211 10.5033 5.21028C10.2727 5.5825 9.72727 5.58249 9.4967 5.21027C9.1819 4.7021 7.95944 3 5.86486 3Z"
               fill="#15151A"
+            ></path>
+            <path
+              id="clicked-path"
+              style="display: none"
+              d="M5.45 0.169434C8.01792 0.169434 9.5 2.32178 9.5 2.32178C9.5 2.32178 10.985 0.169434 13.55 0.169434C16.205 0.169434 18.5 2.23943 18.5 5.11943C18.5 9.34995 12.0604 13.7892 9.86509 15.7297C9.65819 15.9126 9.34179 15.9126 9.13488 15.7297C6.94056 13.7903 0.5 9.34976 0.5 5.11943C0.5 2.23943 2.795 0.169434 5.45 0.169434Z"
+              fill="#8967F0"
             ></path>
           </svg>
         </button>
@@ -456,10 +419,11 @@
         </svg>
       </div>
     </div>
-    <script type="module" src="./js/swiper.js"></script>
-    <script src="./js/utils/findelement.js"></script>
-    <script src="./js/utils/allpagecode.js"></script>
-    <script src="./js/utils/renderProducts.js"></script>
-    <script src="./js/script.js"></script>
+
+    <script type="module" src="../js/swiper.js"></script>
+    <script src="../js/utils/findelement.js"></script>
+    <script src="../js/utils/allpagecode.js"></script>
+    <script src="../js/utils/renderProducts.js"></script>
+    <script src="../js/favourite.js"></script>
   </body>
 </html>

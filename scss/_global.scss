@@ -25,12 +25,25 @@ body {
   margin: 0 auto;
 }
 
-.to-high {
+.to-top {
   position: fixed;
+  bottom: -5px;
+  right: 32px;
+  border-radius: 50%;
   display: flex;
+  align-items: center;
   justify-content: end;
-  z-index: 5;
-  bottom: 45px;
-  right: 5px;
+  text-decoration: none;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+  z-index: 110;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
   cursor: pointer;
 }

@@ -4,9 +4,11 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/inter-v12-latin_cyrillic-regular.woff2") format("woff2"),
+  src: url("../assets/fonts/inter-v12-latin_cyrillic-regular.woff2")
+      format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url("../fonts/inter-v12-latin_cyrillic-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../assets/fonts/inter-v12-latin_cyrillic-regular.woff")
+      format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* inter-500 - latin_cyrillic */
 @font-face {
@@ -14,9 +16,9 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/inter-v12-latin_cyrillic-500.woff2") format("woff2"),
+  src: url("../assets/fonts/inter-v12-latin_cyrillic-500.woff2") format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url("../fonts/inter-v12-latin_cyrillic-500.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../assets/fonts/inter-v12-latin_cyrillic-500.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* inter-600 - latin_cyrillic */
 @font-face {
@@ -24,9 +26,9 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/inter-v12-latin_cyrillic-600.woff2") format("woff2"),
+  src: url("../assets/fonts/inter-v12-latin_cyrillic-600.woff2") format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url("../fonts/inter-v12-latin_cyrillic-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../assets/fonts/inter-v12-latin_cyrillic-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* inter-700 - latin_cyrillic */
 @font-face {
@@ -34,9 +36,9 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/inter-v12-latin_cyrillic-700.woff2") format("woff2"),
+  src: url("../assets/fonts/inter-v12-latin_cyrillic-700.woff2") format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url("../fonts/inter-v12-latin_cyrillic-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../assets/fonts/inter-v12-latin_cyrillic-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* Roboto ⬇️*/
@@ -47,9 +49,11 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-v30-latin_cyrillic-regular.woff2") format("woff2"),
+  src: url("../assets/fonts/roboto-v30-latin_cyrillic-regular.woff2")
+      format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url("../fonts/roboto-v30-latin_cyrillic-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../assets/fonts/roboto-v30-latin_cyrillic-regular.woff")
+      format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-500 - latin_cyrillic */
 @font-face {
@@ -57,9 +61,10 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/roboto-v30-latin_cyrillic-500.woff2") format("woff2"),
+  src: url("../assets/fonts/roboto-v30-latin_cyrillic-500.woff2")
+      format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url("../fonts/roboto-v30-latin_cyrillic-500.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../assets/fonts/roboto-v30-latin_cyrillic-500.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-700 - latin_cyrillic */
 @font-face {
@@ -67,7 +72,8 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/roboto-v30-latin_cyrillic-700.woff2") format("woff2"),
+  src: url("../assets/fonts/roboto-v30-latin_cyrillic-700.woff2")
+      format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url("../fonts/roboto-v30-latin_cyrillic-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../assets/fonts/roboto-v30-latin_cyrillic-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }

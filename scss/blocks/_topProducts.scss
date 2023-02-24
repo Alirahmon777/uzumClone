@@ -17,19 +17,45 @@
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     row-gap: 40px;
+    margin-bottom: 40px;
   }
 
   &__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 232px;
     border-radius: 8px;
     transition: all 0.3s ease;
     cursor: pointer;
+    background-color: #fff;
+  }
+
+  &__likebtn {
+    position: absolute;
+    top: 13px;
+    right: 12px;
+    z-index: 10;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__likebtn:hover {
+    opacity: 1;
+  }
+
+  &__likebtn svg,
+  &__likebtn svg path:first-child {
+    fill: #8967f0;
+    pointer-events: none;
   }
 
   &__imagebox {
@@ -38,32 +64,33 @@
     border-radius: 8px;
     transition: all 0.3s ease;
     z-index: 2;
+    background-color: #fff;
   }
 
   &__img {
     width: 100%;
+    height: 245px;
     border-radius: 8px;
-    transition: all 0.25s ease;
+    transition: all 0.3s ease;
     z-index: 2;
-    will-change: transform;
+    background-color: #fff;
   }
 
   &__item:hover &__img {
     transform: scale(1.02);
-    box-shadow: 0 0 10px #ebebeb;
+    border-radius: 8px 8px 0 0;
   }
 
   &__item:hover &__imagebox {
-    border-radius: 8px 8px 3px 3px;
+    border-radius: 8px 8px 0 0;
   }
 
   &__box {
-    height: 148.8px;
     padding: 12px 7px 7px;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     gap: 5px;
-    overflow: hidden;
     border-radius: 0 0 8px 8px;
     transform: translateY(-3px);
     transition: all 0.3s ease;
@@ -78,6 +105,7 @@
   }
 
   &__rating {
+    width: 120px;
     display: flex;
     align-items: center;
     gap: 3px;
@@ -100,6 +128,7 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
+    flex-grow: 1;
   }
 
   &__prices {
@@ -117,6 +146,7 @@
   }
 
   &__btnbasket {
+    border-radius: 50%;
     padding: 3px 5px;
     border-radius: 50%;
     border: 1px solid #d6d7d8;
@@ -127,5 +157,81 @@
 
   &__btnbasket:hover {
     background: #0000000c;
+  }
+
+  &__addbox {
+    height: 56px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+  }
+
+  &__addbtn {
+    font-family: "Inter";
+    grid-column: 3 / 9;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #f1f1f2;
+
+    &:hover {
+      background-color: #76797f26;
+    }
+
+    &:active {
+      background-color: #76797f33;
+    }
+  }
+
+  &__adminbtns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__editbtn,
+  &__deletebtn {
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  &__editbtn {
+    background-color: #8967f0;
+  }
+
+  &__deletebtn {
+    background-color: #f067a5;
+  }
+
+  &__ripple {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+  }
+
+  &__ripple.active {
+    top: 0.375px;
+    left: 5.39999px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@keyframes like {
+  0%,
+  100% {
+    transform: scale(1) translateZ(0);
+  }
+  50% {
+    transform: scale(1.3) translateZ(0);
   }
 }
