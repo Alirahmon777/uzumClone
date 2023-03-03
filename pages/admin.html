@@ -4,10 +4,184 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../css/style.min.css" />
-    <title>Admin || Uzum</title>
+    <title>Uzum || market - Admin</title>
   </head>
+
   <body>
+    <!-- LOGIN MODAL -->
+
+    <section class="login-modal">
+      <div class="container">
+        <div class="login-modal__wrapper">
+          <button class="login-modal__xclose">
+            <svg
+              data-v-4744ca7f=""
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-test-id="button__close-popup"
+              class="ui-icon close"
+            >
+              <rect width="24" height="24" rx="12" fill="#DFE0E2"></rect>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8.28033 7.21967C7.98744 6.92678 7.51256 6.92678 7.21967 7.21967C6.92678 7.51256 6.92678 7.98744 7.21967 8.28033L10.9393 12L7.21967 15.7197C6.92678 16.0126 6.92678 16.4874 7.21967 16.7803C7.51256 17.0732 7.98744 17.0732 8.28033 16.7803L12 13.0607L15.7197 16.7803C16.0126 17.0732 16.4874 17.0732 16.7803 16.7803C17.0732 16.4874 17.0732 16.0126 16.7803 15.7197L13.0607 12L16.7803 8.28033C17.0732 7.98744 17.0732 7.51256 16.7803 7.21967C16.4874 6.92678 16.0126 6.92678 15.7197 7.21967L12 10.9393L8.28033 7.21967Z"
+                fill="#4E5155"
+              ></path>
+            </svg>
+          </button>
+          <div class="login-modal__head">
+            <h2 class="login-modal__title">Ro‘yxatdan o‘tish</h2>
+            <p class="login-modal__text">
+              Tasdiqlash kodini EMAIL Addresingizda yuboramiz
+            </p>
+          </div>
+          <div class="login-modal__body">
+            <form action="">
+              <p class="login-modal__emailtext">EMAIL</p>
+              <div class="login-modal__emailbox">
+                <img src="../assets/svg/mail.svg" alt="" />
+                <input
+                  class="login-modal__emailinput"
+                  type="email"
+                  name="email"
+                  id="login-email"
+                />
+              </div>
+              <p class="login-modal__pwtext">PASSWORD</p>
+              <div class="login-modal__pwbox">
+                <img src="../assets/svg/lock.svg" alt="" />
+                <input
+                  class="login-modal__pwinput"
+                  type="password"
+                  name="password"
+                  id="login-password"
+                />
+              </div>
+              <a href="#" class="login-modal__forgotpw">forgot password?</a>
+              <button class="login-modal__btn" type="submit">
+                Ro‘yxatdan o‘tish
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGIN MODAL -->
+
+    <!-- MODAL -->
+
+    <section class="admin-edit">
+      <div class="admin-edit__modal">
+        <div class="container">
+          <div class="admin-edit__wrapper">
+            <button class="admin-edit__xclose">
+              <svg
+                data-v-4744ca7f=""
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                data-test-id="button__close-popup"
+                class="ui-icon close"
+              >
+                <rect width="24" height="24" rx="12" fill="#DFE0E2"></rect>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.28033 7.21967C7.98744 6.92678 7.51256 6.92678 7.21967 7.21967C6.92678 7.51256 6.92678 7.98744 7.21967 8.28033L10.9393 12L7.21967 15.7197C6.92678 16.0126 6.92678 16.4874 7.21967 16.7803C7.51256 17.0732 7.98744 17.0732 8.28033 16.7803L12 13.0607L15.7197 16.7803C16.0126 17.0732 16.4874 17.0732 16.7803 16.7803C17.0732 16.4874 17.0732 16.0126 16.7803 15.7197L13.0607 12L16.7803 8.28033C17.0732 7.98744 17.0732 7.51256 16.7803 7.21967C16.4874 6.92678 16.0126 6.92678 15.7197 7.21967L12 10.9393L8.28033 7.21967Z"
+                  fill="#4E5155"
+                ></path>
+              </svg>
+            </button>
+            <h2 class="admin-edit__title">Mahsulotni o'zgartring</h2>
+            <form action="" id="admin-modal-form">
+              <input
+                class="admin-edit__input"
+                id="admin-editimage"
+                type="text"
+                required
+                placeholder="Mahsulotni rasmini o'zgartring"
+              />
+              <input
+                class="admin-edit__input"
+                id="admin-edittitle"
+                type="text"
+                required
+                placeholder="Mahsulotni nomini o'zgartring"
+              />
+              <input
+                class="admin-edit__input"
+                id="admin-editrating"
+                type="number"
+                required
+                placeholder="Mahsulotni reytingini o'zgartring"
+              />
+              <input
+                class="admin-edit__input"
+                id="admin-editprice"
+                type="number"
+                required
+                placeholder="Mahsulotni narxini o'zgartring"
+              />
+
+              <div class="admin-edit__btns">
+                <button
+                  class="admin-edit__btn top-products__editbtn"
+                  id="admin-edit"
+                >
+                  Edit
+                </button>
+                <button
+                  class="admin-edit__btn top-products__deletebtn"
+                  id="admin-close"
+                >
+                  Close
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL -->
+
     <header class="header">
       <div class="header-location">
         <div class="container">
@@ -32,17 +206,19 @@
             <div class="header-location__lang">
               <p class="header-location__ques">Savol-javoblar</p>
               <p class="header-location__ques">Buyurtmalarim</p>
-              <div class="header-location__language-box visibile-ru">
+              <div class="header-location__language-box visible-uzb">
                 <div
                   class="header-location__language-uzb"
-                  data-name="O'zbekcha"
+                  id="lang-uzb"
+                  data-name="uzb"
                 >
                   <img src="../assets/svg/uzb.svg" alt="uzb-img language" />
                   <p class="header-location__language">O'zbekcha</p>
                 </div>
                 <div
+                  id="lang-ru"
                   class="header-location__language-russian"
-                  data-name="Русский"
+                  data-name="ru"
                 >
                   <img src="../assets/svg/rus.svg" alt="rus-img language" />
                   <p class="header-location__language">Русский</p>
@@ -75,7 +251,9 @@
                     data-v-58853e36=""
                     style="--out: #eaeaf9"
                   >
-                    <div class="rect"><div class="inner"></div></div>
+                    <div class="rect">
+                      <div class="inner"></div>
+                    </div>
                     <div class="top"></div>
                     <div class="bottom"></div>
                   </div>
@@ -124,8 +302,8 @@
                       fill="black"
                     ></path>
                   </svg>
-                  <p>Kirish</p></a
-                >
+                  <p>Kirish</p>
+                </a>
               </li>
               <li class="header-login__item">
                 <a href="./wishes.html"
@@ -143,8 +321,8 @@
                       fill="#141415"
                     />
                   </svg>
-                  <p>Saralangan</p></a
-                >
+                  <p>Saralangan</p>
+                </a>
               </li>
               <li class="header-login__item">
                 <a href="./basket.html"
@@ -163,8 +341,8 @@
                       fill="#141415"
                     ></path>
                   </svg>
-                  <p>Savat</p></a
-                >
+                  <p>Savat</p>
+                </a>
               </li>
             </ul>
           </div>
@@ -229,6 +407,107 @@
     <main>
       <section class="top-products">
         <div class="container">
+          <div class="admin-edit__addpanel">
+            <div class="admin-edit__head">
+              <span>
+                <h2>Mahsulot qo'shish</h2>
+                <p>
+                  Qo'shayotgan Mahsulotingiz real vaqtda tekshirib keting
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="#909090"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ui-icon"
+                    style="vertical-align: middle; transform: rotate(-90deg)"
+                  >
+                    <path
+                      d="M12 16C12.3107 15.9911 12.5948 15.8748 12.8257 15.6243L18.4481 9.8071C18.6435 9.61029 18.75 9.3598 18.75 9.06458C18.75 8.47414 18.2883 8 17.7024 8C17.4183 8 17.143 8.1163 16.9388 8.32206L12.0089 13.4504L7.06116 8.32206C6.85696 8.12524 6.59061 8 6.29763 8C5.71167 8 5.25 8.47414 5.25 9.06458C5.25 9.3598 5.35654 9.61029 5.55186 9.8071L11.1832 15.6243C11.4229 15.8748 11.6893 16 12 16Z"
+                    ></path>
+                  </svg>
+                </p>
+              </span>
+
+              <form action="" class="admin-edit__form" id="admin-form">
+                <input
+                  class="admin-edit__input"
+                  id="admin-addimage"
+                  type="text"
+                  placeholder="Mahsulotni rasmini kiriting"
+                />
+                <input
+                  class="admin-edit__input"
+                  id="admin-addtitle"
+                  type="text"
+                  placeholder="Mahsulotni nomini kiriting"
+                />
+                <input
+                  class="admin-edit__input"
+                  id="admin-addrating"
+                  type="number"
+                  placeholder="Mahsulotni reytingini kiriting"
+                />
+                <input
+                  class="admin-edit__input"
+                  id="admin-addprice"
+                  type="number"
+                  placeholder="Mahsulotni narxini kiriting"
+                />
+
+                <button
+                  class="admin-edit__btn--submit top-products__editbtn"
+                  id="admin-add"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+            <li class="top-products__item admin-edit__preview">
+              <div class="top-products__imagebox">
+                <img
+                  class="top-products__img admin-edit__previewimg"
+                  src="../assets/images/cfga8ht40v9uauhi13f0.jpg"
+                  alt="pepsi cola"
+                />
+              </div>
+              <div class="top-products__box">
+                <p class="top-products__name admin-edit__previewtitle">
+                  Gazlangan ichimlik Pepsi, 1 l + Mountain Dew, 1l, 1+1
+                </p>
+                <p class="top-products__rating admin-edit__previewrating">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 12.9525L13.635 15.75L12.405 10.4775L16.5 6.93L11.1075 6.4725L9 1.5L6.8925 6.4725L1.5 6.93L5.595 10.4775L4.365 15.75L9 12.9525Z"
+                      fill="#F5A623"
+                    />
+                  </svg>
+                  <span>5.0 (67 baho)</span>
+                </p>
+                <p class="top-products__monthly admin-edit__previewmonthly">
+                  <mark><span>1 080</span> so'm/oyiga</mark>
+                </p>
+                <div class="top-products__bottom">
+                  <div class="top-products__prices">
+                    <p
+                      class="top-products__subprice admin-edit__previewsubprice"
+                    >
+                      22 000 so'm
+                    </p>
+                    <p class="top-products__price admin-edit__previewprice">
+                      <span>9 000</span> so'm
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
           <div class="top-products__wrapper">
             <ul class="top-products__list"></ul>
           </div>
@@ -294,10 +573,11 @@
             </button>
           </div>
           <div class="top-products__adminbtns">
-            <button class="top-products__editbtn">edit</button>
-            <button class="top-products__deletebtn">delete</button>
+            <button class="top-products__editbtn">Edit</button>
+            <button class="top-products__deletebtn">Delete</button>
           </div>
         </div>
+        <div class="top-products__height"></div>
       </li>
     </template>
 

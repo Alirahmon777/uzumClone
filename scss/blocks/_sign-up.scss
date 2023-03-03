@@ -1,0 +1,106 @@
+.login-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    background-color: #00000065;
+    z-index: 111;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+
+  &__wrapper {
+    position: relative;
+    width: 35%;
+    margin: 0 auto;
+    padding: 18px 13px 8px;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+
+  &__xclose{
+    top: -12px;
+    right: -12px;
+    position: absolute;
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 24px;
+    cursor: pointer;
+    z-index: 11;
+  }
+
+  &__head {
+    padding: 8px 13px;
+    background-color: #d4e2ff4f;
+    text-align: center;
+    border: 1px solid #d4e2ff8e;
+    border-radius: 4px;
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  &__body {
+    margin-top: 40px;
+    padding: 10px 13px;
+  }
+
+  &__emailtext,
+  &__pwtext {
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #8b8e94;
+  }
+
+  &__emailbox,
+  &__pwbox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  &__emailbox img,
+  &__pwbox img {
+    width: 30px;
+  }
+
+  &__emailinput,
+  &__pwinput {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 14px;
+    outline: none;
+    border: 1px solid #eee;
+    background-color: #f6f7f8;
+    border-radius: 4px;
+  }
+
+  &__forgotpw{
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    text-align: end;
+  }
+
+  &__btn {
+    width: 100%;
+    margin-top: 27px;
+    font-size: 14px;
+    padding: 8px 14px;
+    outline: none;
+    background-color: #8967f0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

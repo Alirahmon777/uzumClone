@@ -30,7 +30,7 @@
     <meta name="msapplication-TileColor" content="#9f00a7" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="../css/style.min.css" />
-    <title>Savat</title>
+    <title>Uzum</title>
   </head>
   <body>
     <!-- LOGIN MODAL -->
@@ -316,45 +316,106 @@
       </div>
     </header>
 
-    <div class="container">
-      <div title="tepaga chiqmoq" class="to-top">
-        <svg
-          version="1.1"
-          id="Capa_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 54 54"
-          xml:space="preserve"
-          style="width: 54px; height: 54px"
-        >
-          <g>
-            <g>
-              <path
-                d="M53,27L53,27c0,14.359-11.641,26-26,26h0C12.641,53,1,41.359,1,27v0C1,12.641,12.641,1,27,1h0
-        C41.359,1,53,12.641,53,27z"
-                style="fill: rgb(112, 0, 255)"
-              ></path>
-              <path
-                d="M27,54C12.112,54,0,41.888,0,27S12.112,0,27,0s27,12.112,27,27S41.888,54,27,54z M27,2
-        C13.215,2,2,13.215,2,27s11.215,25,25,25s25-11.215,25-25S40.785,2,27,2z"
-                style="fill: rgb(255, 255, 255)"
-              ></path>
-            </g>
-            <path
-              d="M39,32.706c-0.256,0-0.512-0.098-0.707-0.293L27,21.12L15.707,32.413
-        c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414l11.498-11.498c0.666-0.666,1.752-0.666,2.418,0l11.498,11.498
-        c0.391,0.391,0.391,1.023,0,1.414C39.512,32.608,39.256,32.706,39,32.706z"
-              style="fill: rgb(255, 255, 255)"
-            ></path>
-          </g>
-        </svg>
-      </div>
-    </div>
+    <main class="main">
+      <section class="single-product">
+        <div class="container">
+          <ul class="single-product__list"></ul>
+        </div>
+      </section>
+    </main>
 
+    <template id="single-product__template">
+      <li class="single-product__item">
+        <img
+          src="../assets/images/cfga8ht40v9uauhi13f0.jpg"
+          class="single-product__img"
+          alt=""
+        />
+        <div class="single-product__content">
+          <div class="single-product__info">
+            <div class="single-product__stats">
+              <div id="rating-box">
+                <p class="single-product__rating">
+                  <span class="single-product__starimg">
+                    <img width="12" src="../assets/svg/star.svg" alt="" />
+                  </span>
+                  0 <span>Baholar hali yo'q </span>
+                </p>
+                <p class="single-product__order">Ko'proq 11000 buyurtma</p>
+              </div>
+              <div class="single-product__like">
+                <img
+                  width="18"
+                  src="data:image/svg+xml,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e %3cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.5 5.5C5.26935 5.5 3.5 7.30906 3.5 9.5C3.5 10.4282 3.87684 11.4436 4.5487 12.5105C5.21692 13.5716 6.14148 14.6274 7.15127 15.6219C8.55769 17.007 10.0318 18.1879 11.1708 19.1003C11.4734 19.3427 11.7523 19.5661 12 19.7694C12.2477 19.5661 12.5266 19.3427 12.8292 19.1003C13.9682 18.1879 15.4423 17.007 16.8487 15.6219C17.8585 14.6274 18.7831 13.5716 19.4513 12.5105C20.1232 11.4436 20.5 10.4282 20.5 9.5C20.5 7.30898 18.7314 5.5 16.5 5.5C14.3473 5.5 13.0738 7.20226 12.7262 7.74742C12.3889 8.27655 11.6111 8.27653 11.2738 7.74742C10.9262 7.20225 9.65273 5.5 7.5 5.5ZM2 9.5C2 6.49094 4.43065 4 7.5 4C9.73143 4 11.2249 5.30207 12 6.21581C12.7751 5.30207 14.2686 4 16.5 4C19.5702 4 22 6.49102 22 9.5C22 10.8218 21.4706 12.1189 20.7206 13.3098C19.9669 14.5066 18.954 15.6539 17.9013 16.6906C16.4429 18.1269 14.808 19.4384 13.6502 20.3672C13.1649 20.7565 12.7634 21.0786 12.4939 21.3144C12.2111 21.5619 11.7889 21.5619 11.5061 21.3144C11.2366 21.0786 10.8351 20.7565 10.3498 20.3672C9.19201 19.4384 7.55712 18.1269 6.09873 16.6906C5.04602 15.6539 4.03308 14.5066 3.27942 13.3098C2.52941 12.1189 2 10.8218 2 9.5Z' fill='black'/%3e %3c/svg%3e"
+                  class="noselect"
+                  id="icon-heart"
+                />
+                <p class="single-product__liketext">Istaklarga</p>
+              </div>
+            </div>
+
+            <h2 class="single-product__title">
+              Kungaboqar yog'i Shedroye leto, qayta qilingan, 900 ml
+            </h2>
+            <div class="single-product__sailers">
+              <p class="single-product__sailer">Sotuvchi:</p>
+              <a
+                href="#"
+                class="single-product__sailerlink"
+                style="text-decoration: underline"
+                >PROGRESS</a
+              >
+            </div>
+            <div class="single-product__delivers">
+              <p class="single-product__delivery">
+                Yetkazib berish:
+                <img
+                  src="data:image/svg+xml,%3csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e %3cpath fill-rule='evenodd' clip-rule='evenodd' d='M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14ZM8.00003 3.5C8.00003 4.05229 7.55231 4.5 7.00003 4.5C6.44774 4.5 6.00003 4.05229 6.00003 3.5C6.00003 2.94772 6.44774 2.5 7.00003 2.5C7.55231 2.5 8.00003 2.94772 8.00003 3.5ZM6.10012 5.79844C5.76875 5.79844 5.50012 6.06707 5.50012 6.39844C5.50012 6.72981 5.76875 6.99844 6.10012 6.99844H6.40008V9.80235H5.60159C5.27022 9.80235 5.00159 10.071 5.00159 10.4023C5.00159 10.7337 5.27022 11.0023 5.60159 11.0023H8.40155C8.73292 11.0023 9.00155 10.7337 9.00155 10.4023C9.00155 10.071 8.73292 9.80235 8.40155 9.80235H7.60008V6.39844C7.60008 6.06707 7.33146 5.79844 7.00008 5.79844H6.10012Z' fill='%23CACBCE'/%3e %3c/svg%3e"
+                  class="noselect"
+                  id="icon-help"
+                  style="width: 14px"
+                />
+              </p>
+              <a href="#" class="single-product__deliveryfree">1 kun, bepul</a>
+            </div>
+          </div>
+          <p class="single-product__pricetext">Narx:</p>
+          <div class="single-product__pricebox">
+            <p class="single-product__price">16 000 <span>so'm</span></p>
+            <p class="single-product__subprice">23 000 <span>so'm</span></p>
+            <p class="single-product__category">Katta sotuvlar</p>
+          </div>
+          <div class="single-product__monthlybox">
+            <div class="single-product__monthlytextbox">
+              <p class="single-product__monthlytext">
+                <mark>
+                  <span>Oyiga<span> 2 080</span> so'mdan</span></mark
+                >
+              </p>
+              <p class="single-product__monthlytext">muddatli to'lov</p>
+            </div>
+            <div class="single-product__iconright">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="ui-icon installment-icon-chevron"
+              >
+                <path
+                  d="M18 14C18 14.3672 17.8013 14.4996 17.5508 14.7305L11.5 20.3242C11.3032 20.5195 11.1211 20.75 10.7266 20.75C10.4492 20.75 10 20.5352 10 19.9492C10 19.5859 10.2942 19.4151 10.5 19.2109L16.1172 14L10.4922 8.78125C10.2954 8.57705 9.99609 8.42578 9.99609 8C9.99609 7.66406 10.2578 7.25 10.793 7.25C11.0882 7.25 11.3579 7.52734 11.5547 7.72266L17.5508 13.25C17.8013 13.4897 18 13.6328 18 14Z"
+                  fill="#76797F"
+                  fill-opacity="0.6"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div></li
+    ></template>
+
+    <script src="../js/utils/render-single.js"></script>
     <script src="../js/utils/findelement.js"></script>
-    <script src="../js/utils/allpagecode.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/single.js"></script>
   </body>
 </html>

@@ -6,6 +6,7 @@ function renderProducts(array, slice, slice2, parent, template, admin) {
       array.forEach((product) => {
         const newTopProduct = template.content.cloneNode(true);
         const item = findElement(".top-products__item", newTopProduct);
+        const itemLink = findElement(".top-products__height", newTopProduct);
         const likeBtn = findElement(".top-products__likebtn", newTopProduct);
         const img = findElement(".top-products__img", newTopProduct);
         const path = findElement("#path", newTopProduct);
@@ -43,6 +44,11 @@ function renderProducts(array, slice, slice2, parent, template, admin) {
         monthly.textContent = `${Math.floor((product.price * 360) / 30)}`;
         likeBtn.dataset.id = product.id;
 
+        itemLink.addEventListener("click", () => {
+          localStorage.setItem("id", product.id);
+          window.location.href = "../../pages/single-page.html";
+        });
+
         if (product.rating == 0 || rating.textContent == 0) {
           findElement(".top-products__rating", newTopProduct).style.display =
             "none";
@@ -53,6 +59,7 @@ function renderProducts(array, slice, slice2, parent, template, admin) {
       array.slice(slice, slice2).forEach((product) => {
         const newTopProduct = template.content.cloneNode(true);
         const item = findElement(".top-products__item", newTopProduct);
+        const itemLink = findElement(".top-products__height", newTopProduct);
         const likeBtn = findElement(".top-products__likebtn", newTopProduct);
         const ripple = findElement(".top-products__ripple", newTopProduct);
         const likeBtnSvg = findElement(
@@ -79,9 +86,9 @@ function renderProducts(array, slice, slice2, parent, template, admin) {
             "animation: like 0.2s cubic-bezier(0.21, 0.88, 0.88, 0.21);";
           likeBtnSvg.remove();
           likeBtn.innerHTML = `
-        <svg data-v-56571d0e="" id="path-like" width="20" height="20" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg" alt="like" class="ui-icon ">
-        <path d="M5.45 0.169434C8.01792 0.169434 9.5 2.32178 9.5 2.32178C9.5 2.32178 10.985 0.169434 13.55 0.169434C16.205 0.169434 18.5 2.23943 18.5 5.11943C18.5 9.34995 12.0604 13.7892 9.86509 15.7297C9.65819 15.9126 9.34179 15.9126 9.13488 15.7297C6.94056 13.7903 0.5 9.34976 0.5 5.11943C0.5 2.23943 2.795 0.169434 5.45 0.169434Z" fill="#8967F0"></path>
-        </svg>`;
+          <svg data-v-56571d0e="" id="path-like" width="20" height="20" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg" alt="like" class="ui-icon ">
+          <path d="M5.45 0.169434C8.01792 0.169434 9.5 2.32178 9.5 2.32178C9.5 2.32178 10.985 0.169434 13.55 0.169434C16.205 0.169434 18.5 2.23943 18.5 5.11943C18.5 9.34995 12.0604 13.7892 9.86509 15.7297C9.65819 15.9126 9.34179 15.9126 9.13488 15.7297C6.94056 13.7903 0.5 9.34976 0.5 5.11943C0.5 2.23943 2.795 0.169434 5.45 0.169434Z" fill="#8967F0"></path>
+          </svg>`;
           likeBtn.style.opacity = 1;
         } else {
           likeBtn.title = product.name + " saralanganlarga qo'shish";
@@ -101,6 +108,11 @@ function renderProducts(array, slice, slice2, parent, template, admin) {
         monthly.textContent = `${Math.floor((product.price * 360) / 30)}`;
         likeBtn.dataset.id = product.id;
 
+        itemLink.addEventListener("click", () => {
+          localStorage.setItem("id", product.id);
+          window.location.href = "../../pages/single-page.html";
+        });
+        
         if (product.rating == 0 || rating.textContent == 0) {
           findElement(".top-products__rating", newTopProduct).style.display =
             "none";
@@ -113,6 +125,7 @@ function renderProducts(array, slice, slice2, parent, template, admin) {
       array.forEach((product) => {
         const newTopProduct = template.content.cloneNode(true);
         const item = findElement(".top-products__item", newTopProduct);
+        const itemLink = findElement(".top-products__height", newTopProduct);
         const img = findElement(".top-products__img", newTopProduct);
         const title = findElement(".top-products__name", newTopProduct);
         const rating = findElement(".top-products__rating span", newTopProduct);
@@ -144,6 +157,11 @@ function renderProducts(array, slice, slice2, parent, template, admin) {
         price.textContent = product.price * 100 + " so'm";
         basket.title = product.name + " savatga qo'shish";
         monthly.textContent = `${Math.floor((product.price * 360) / 30)}`;
+
+        itemLink.addEventListener("click", () => {
+          localStorage.setItem("id", product.id);
+          window.location.href = "../../pages/single-page.html";
+        });
 
         if (product.rating == 0 || rating.textContent == 0) {
           findElement(".top-products__rating", newTopProduct).style.display =
@@ -155,6 +173,7 @@ function renderProducts(array, slice, slice2, parent, template, admin) {
       array.slice(slice, slice2).forEach((product) => {
         const newTopProduct = template.content.cloneNode(true);
         const item = findElement(".top-products__item", newTopProduct);
+        const itemLink = findElement(".top-products__height", newTopProduct);
         const img = findElement(".top-products__img", newTopProduct);
         const title = findElement(".top-products__name", newTopProduct);
         const rating = findElement(".top-products__rating span", newTopProduct);
@@ -171,8 +190,11 @@ function renderProducts(array, slice, slice2, parent, template, admin) {
             ".top-products__deletebtn",
             newTopProduct
           );
+          const editBtn = findElement(".top-products__editbtn", newTopProduct);
           deleteBtn.dataset.id = product.id;
           deleteBtn.title = product.name + " mahsulotini o'chirish";
+          editBtn.dataset.id = product.id;
+          editBtn.title = product.name + " mahsulotini o'zgartirish";
         }
 
         item.title = product.name;
@@ -186,6 +208,11 @@ function renderProducts(array, slice, slice2, parent, template, admin) {
         price.textContent = product.price * 100 + " so'm";
         basket.title = product.name + " savatga qo'shish";
         monthly.textContent = `${Math.floor((product.price * 360) / 30)}`;
+
+        itemLink.addEventListener("click", () => {
+          localStorage.setItem("id", product.id);
+          window.location.href = "../../pages/single-page.html";
+        });
 
         if (product.rating == 0 || rating.textContent == 0) {
           findElement(".top-products__rating", newTopProduct).style.display =

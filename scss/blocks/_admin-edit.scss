@@ -1,0 +1,111 @@
+.admin-edit {
+  position: absolute;
+  z-index: 101;
+
+  &__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    background-color: #00000065;
+    z-index: 111;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 35px 24px;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  &__wrapper form {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 7px;
+    background-color: #f7f6f8;
+    border: none;
+    outline: none;
+  }
+
+  &__input::-webkit-inner-spin-button,
+  &__input::-webkit-outer-spin-button {
+    display: none;
+  }
+  &__btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__xclose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    border-radius: 24px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__form {
+    height: 100%;
+    margin: 35px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__btn--submit {
+    padding: 15px 20px;
+    width: 100%;
+  }
+
+  &__addpanel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  &__head span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__preview {
+    position: relative;
+    top: -25px;
+  }
+}
